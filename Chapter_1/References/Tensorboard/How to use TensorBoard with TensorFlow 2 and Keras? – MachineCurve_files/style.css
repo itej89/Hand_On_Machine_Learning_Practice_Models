@@ -1,0 +1,100 @@
+/*
+ Theme Name:   Refur Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Refur  Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     refur
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  refurchild
+*/
+
+.header-showcase_content {
+	opacity: 1 !important;
+}
+
+.page-header-wrap {
+	background: #000000;
+}
+
+@media only screen and (min-width: 768px) { .home .header-showcase { height: 159px !important;
+}
+.home .header-showcase_content { top: 165px !important;
+}
+.home .header-showcase_title { font-size: 45px;
+}
+	.site-content > .container {
+		padding-top: 55px !important;
+	}
+}
+
+@media only screen and (max-width: 768px) { .home .header-showcase { min-height: 250px !important;
+}
+	.site-header .row {
+		background: black;
+	}
+	
+	.site-header {
+		border-bottom: 3px solid #e0e0e0;
+	}
+	
+}
+
+a,p,code {
+    word-wrap:break-word;
+}
+
+#btn-ask {
+	float: right !important;
+	margin-bottom: 25px !important;
+	background: #49b170 !important;
+	color: #ffffff !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	padding: 15px;
+	border-radius: 20px;
+	position: relative;
+	z-index: 100;
+}
+
+#btn-ask:hover {
+	cursor: pointer !important;
+	background: #3ca061 !important;
+}
+
+.wp-post-image, .wp-block-image, .lazyloaded {
+	border-radius: 20px !important;
+}
+
+h2, h3, h4, h5 {
+	margin-top: 35px;
+	padding-bottom: 0px;
+	margin-bottom: 10px !important;
+}
+
+.welcome {
+	width: 100%;
+	text-align:center;
+	margin-top: 25px;
+}
+
+.welcome h1, .welcome h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.welcome h1 {
+	font-weight: bold;
+	font-size: 45px;
+	color: #535353;
+	margin-top: 75px;
+}
+
+.welcome h2 {
+	color: #a5a5a5;
+	margin-top: 15px;
+	font-size: 20px;
+}
