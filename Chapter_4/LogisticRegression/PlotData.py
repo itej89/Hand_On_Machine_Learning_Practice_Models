@@ -24,7 +24,7 @@ class PlotData():
 
 if __name__ == '__main__':
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     DATA_FILE_PATH = os.path.join(pwd.parent, PATH_CONSTANTS.DATASET_DIR, 
     PATH_CONSTANTS.DATASET_NAME,  PATH_CONSTANTS.DATASET_BLOB)
 

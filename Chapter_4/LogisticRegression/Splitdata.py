@@ -34,7 +34,7 @@ class SplitData():
                 
 if __name__ == '__main__':
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     Data_File_Path = os.path.join(pwd.parent, PATH_CONSTANTS.DATASET_DIR, 
     PATH_CONSTANTS.DATASET_NAME, PATH_CONSTANTS.DATASET_BLOB)
     

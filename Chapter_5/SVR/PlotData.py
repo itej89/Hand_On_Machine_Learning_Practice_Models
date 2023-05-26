@@ -2,16 +2,16 @@ import sys, os
 
 from pathlib import Path 
 
-pwd = Path(os.path.abspath(__file__))
-sys.path.append(os.path.join(pwd.parent.parent, "CommonInterfaces"))
+
+
 
 from CommonConstants import DATASET_PATH_CONSTANTS
 
 import matplotlib.pyplot as plt
 
-from IPlotData import IPlotData
 
-class PlotData(IPlotData):
+
+class PlotData:
 
     def PlotHistogram(self, _panda_data_frame, _bins, _figsize):
         _panda_data_frame.hist(bins=_bins, figsize=_figsize)
@@ -40,7 +40,7 @@ class PlotData(IPlotData):
 
 if __name__ == '__main__':
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     DATA_FILE_PATH = os.path.join(pwd.parent, DATASET_PATH_CONSTANTS.DIR, 
     DATASET_PATH_CONSTANTS.NAME,  DATASET_PATH_CONSTANTS.BLOB)
 

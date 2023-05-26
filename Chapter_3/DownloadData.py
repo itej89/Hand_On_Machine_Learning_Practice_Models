@@ -4,8 +4,8 @@ import urllib.request
 
 from pathlib import Path 
 
-pwd = Path(os.path.abspath(__file__))
-sys.path.append(os.path.join(pwd.parent.parent, "CommonInterfaces"))
+
+
 
 
 from IDownloadData import IDownloadData
@@ -44,7 +44,7 @@ class DownloadData(IDownloadData):
 if __name__ == '__main__':
     #Download Data
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     MNIST_PATH = os.path.join(pwd.parent, "datasets", "mnist")
 
     objDownloadData = DownloadData(MNIST_PATH, "mnist_dataset.pkl")

@@ -34,7 +34,7 @@ if __name__ == '__main__':
     DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml2/master/"
     HOUSING_URL = DOWNLOAD_ROOT+"datasets/housing/housing.tgz"
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     HOUSING_PATH = os.path.join(pwd.parent, "datasets", "housing")
 
     objDownloadData = DownloadData(HOUSING_PATH, "housing.tgz")

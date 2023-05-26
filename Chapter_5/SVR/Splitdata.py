@@ -2,16 +2,16 @@ import sys, os
 
 from pathlib import Path 
 
-pwd = Path(os.path.abspath(__file__))
-sys.path.append(os.path.join(pwd.parent.parent, "CommonInterfaces"))
+
+
 
 import matplotlib.pyplot as plt
 
-from ISplitData import ISplitData
+
 
 from CommonConstants import DATASET_PATH_CONSTANTS
 
-class SplitData(ISplitData):
+class SplitData:
 
     def split_data(self, data_Set, _test_percent, _randome_state):
         None
@@ -26,8 +26,8 @@ class SplitData(ISplitData):
 
         import numpy as np
         for train_index, test_index in split.split(_panda_data_frame, _panda_data_frame[_columnID]):
-            strat_train_set = strat_train_set.append(_panda_data_frame.loc[train_index])  
-            strat_test_set = strat_test_set.append(_panda_data_frame.loc[test_index])
+            strat_train_set = pd.concat([strat_train_set, _panda_data_frame.loc[train_index]], ignore_index=True)
+            strat_test_set = pd.concat([strat_test_set, _panda_data_frame.loc[test_index]], ignore_index=True)
 
         return strat_train_set, strat_test_set
 
@@ -37,7 +37,7 @@ class SplitData(ISplitData):
                 
 if __name__ == '__main__':
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     Data_File_Path = os.path.join(pwd.parent, DATASET_PATH_CONSTANTS.DIR, 
     DATASET_PATH_CONSTANTS.NAME, DATASET_PATH_CONSTANTS.BLOB)
     

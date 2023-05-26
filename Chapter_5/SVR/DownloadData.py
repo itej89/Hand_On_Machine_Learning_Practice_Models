@@ -2,8 +2,8 @@ import sys, os
 
 from pathlib import Path 
 
-pwd = Path(os.path.abspath(__file__))
-sys.path.append(os.path.join(pwd.parent.parent, "CommonInterfaces"))
+
+
 
 
 from IDownloadData import IDownloadData
@@ -41,7 +41,7 @@ class DownloadData(IDownloadData):
 if __name__ == '__main__':
     #Download Data
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     DATA_PATH = os.path.join(pwd.parent, DATASET_PATH_CONSTANTS.DIR, DATASET_PATH_CONSTANTS.NAME)
 
     objDownloadData = DownloadData(DATA_PATH, DATASET_PATH_CONSTANTS.BLOB)

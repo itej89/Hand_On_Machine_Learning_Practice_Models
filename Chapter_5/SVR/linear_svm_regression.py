@@ -88,7 +88,7 @@ class svr_cal_housing_model :
 
     def build_model(self):
         from sklearn.svm import SVR
-        model = SVR(kernel="poly", degree=2, C=100, epsilon=0.1)
+        model = SVR(kernel="linear", degree=2, C=100, epsilon=0.1)
         return model
 
     def fit_model(self, model, train_X, train_y):

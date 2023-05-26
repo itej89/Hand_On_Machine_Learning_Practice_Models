@@ -2,7 +2,7 @@ import os, sys
 
 from pathlib import Path 
 
-pwd = Path(os.path.abspath(__file__))
+
 sys.path.append(os.path.join(pwd.parent, "KerasCallbacks"))
 sys.path.append(os.path.join(pwd.parent, "PipelineTransformers"))
 
@@ -43,7 +43,7 @@ class svr_cal_housing_model :
 
     def get_data_sets(self):
         from pathlib import Path
-        pwd = Path(os.path.abspath(__file__))
+        
         DATA_PATH = os.path.join(pwd.parent, DATASET_PATH_CONSTANTS.DIR, DATASET_PATH_CONSTANTS.NAME)
 
         #Load Data

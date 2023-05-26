@@ -20,7 +20,7 @@ class LoadData():
 if __name__ == '__main__':
     #Download Data
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     Data_File_Path = os.path.join(pwd.parent, "datasets", "linear_rand", "linear_rand.pkl")
 
 

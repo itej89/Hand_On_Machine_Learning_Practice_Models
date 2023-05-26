@@ -2,7 +2,7 @@ import os, sys
 
 from pathlib import Path 
 
-pwd = Path(os.path.abspath(__file__))
+
 
 
 from CommonConstants import DATASET_PATH_CONSTANTS, MODEL_PATH_CONSTANTS, LABELS
@@ -29,7 +29,7 @@ class svm_iris_model :
 
     def get_data_sets(self):
         from pathlib import Path
-        pwd = Path(os.path.abspath(__file__))
+        
         DATA_PATH = os.path.join(pwd.parent, DATASET_PATH_CONSTANTS.DIR, DATASET_PATH_CONSTANTS.NAME)
 
         #Load Data

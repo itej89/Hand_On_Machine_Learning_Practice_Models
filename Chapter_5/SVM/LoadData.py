@@ -2,17 +2,13 @@ import sys, os
 
 from pathlib import Path 
 
-pwd = Path(os.path.abspath(__file__))
-sys.path.append(os.path.join(pwd.parent.parent, "CommonInterfaces"))
 
-
-from ILoadData import ILoadData
 
 from CommonConstants import DATASET_PATH_CONSTANTS
 
 import pandas as pd
 
-class LoadData(ILoadData):
+class LoadData():
 
     def load_Data(self, _filename, _showinfo=False):
         file_object = open(_filename, "rb")
@@ -30,7 +26,7 @@ class LoadData(ILoadData):
 if __name__ == '__main__':
     #Download Data
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     Data_File_Path = os.path.join(pwd.parent, DATASET_PATH_CONSTANTS.DIR, 
     DATASET_PATH_CONSTANTS.NAME, DATASET_PATH_CONSTANTS.BLOB)
 

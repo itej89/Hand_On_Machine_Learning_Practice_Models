@@ -2,7 +2,6 @@ import os, sys
 
 from pathlib import Path 
 
-pwd = Path(os.path.abspath(__file__))
 
 
 from CommonConstants import DATASET_PATH_CONSTANTS, MODEL_PATH_CONSTANTS, LABELS

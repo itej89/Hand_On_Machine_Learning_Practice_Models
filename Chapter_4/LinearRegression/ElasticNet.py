@@ -22,7 +22,7 @@ class ElasticNet:
 
     def get_data_sets(self):
         from pathlib import Path
-        pwd = Path(os.path.abspath(__file__))
+        
         DATA_PATH = os.path.join(pwd.parent, "datasets", "linear_rand")
 
         #Load Data

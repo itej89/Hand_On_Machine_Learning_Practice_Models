@@ -20,7 +20,7 @@ class PlotData():
 
 if __name__ == '__main__':
     from pathlib import Path
-    pwd = Path(os.path.abspath(__file__))
+    
     DATA_FILE_PATH = os.path.join(pwd.parent, "datasets", "linear_rand",  "linear_rand.pkl")
 
     from LoadData import LoadData

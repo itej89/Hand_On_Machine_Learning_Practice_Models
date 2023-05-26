@@ -27,7 +27,7 @@ class LogisticRegression_Iris :
 
     def get_data_sets(self):
         from pathlib import Path
-        pwd = Path(os.path.abspath(__file__))
+        
         DATA_PATH = os.path.join(pwd.parent, PATH_CONSTANTS.DATASET_DIR, PATH_CONSTANTS.DATASET_NAME)
 
         #Load Data
